@@ -1,0 +1,24 @@
+.home-container {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .home-header {
+    font-weight: bold;
+    color: #ff69b4;
+  }
+  
+  .article {
+    margin-bottom: 20px;
+  }
+  
+  .article-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .article-description {
+    font-size: 14px;
+    color: #666;
+  }
+  

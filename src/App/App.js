@@ -1,30 +1,35 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Home from '../Home/home';
 
 function App() {
   const [news, setNews] = useState([]);
-  const [article, setArticle] = useState({});
 
   useEffect(() => {
-    fetch('https://newsapi.org/v2/everything?domains=theonion.com&language=en&from=2023-05-15&apiKey=de3a760de2e04da09f3a61de9a7429e2')
+    fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=de3a760de2e04da09f3a61de9a7429e2')
       .then(response => {
         if (response.ok) {
-          setLoading(false);
           return response.json();
+        } else {
+          throw new Error('Error fetching news');
         }
       })
       .then(data => {
-        // Handle the fetched data
+        setNews(data.articles);
       })
       .catch(error => {
-        // Handle the error
+        console.log(error);
       });
-  }, []); // Empty dependency array to run the effect only once
+  }, []);
 
   return (
     <div>
-
+      <h1>News App</h1>
+      <Routes>
+        <Route exact path="/" element={<Home news={news} />}>
+        </Route>
+      </Routes>
     </div>
   );
 }
