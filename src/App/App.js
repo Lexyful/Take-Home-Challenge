@@ -1,7 +1,8 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
-import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from '../Home/home';
+import { Article } from '../Article/Article';
 
 function App() {
   const [news, setNews] = useState([]);
@@ -25,10 +26,9 @@ function App() {
 
   return (
     <div>
-      <h1>News App</h1>
       <Routes>
-        <Route exact path="/" element={<Home news={news} />}>
-        </Route>
+        <Route path="/" element={<Home news={news} />} />
+        <Route path="/article/:id" element={<Article news={news} />} />
       </Routes>
     </div>
   );

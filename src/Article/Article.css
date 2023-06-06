@@ -1,0 +1,37 @@
+.article-container {
+    padding: 20px;
+    background-color: #f7ccde;
+  }
+  
+  .article-header {
+    font-family: 'Leckerli One';
+    font-weight: bold;
+    color: #f7edf2;
+  }
+  
+  .article-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .article-title {
+    font-family: 'Leckerli One';
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .article-description {
+    font-family: 'Leckerli One';
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .article-content {
+    font-family: 'Actor', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+  }
+  

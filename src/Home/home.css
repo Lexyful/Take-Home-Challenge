@@ -1,24 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli One&display=swap');
+
 .home-container {
-    background-color: #fff;
-    padding: 20px;
+  background-color: #efb1cb;
+  padding: 20px;
+}
+
+.home-header {
+  font-family: 'Leckerli One';
+  font-weight: bold;
+  color: #f7edf2;
+  width: 100%;
+}
+
+.articles-grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  flex: 1 0 100%;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .article-card {
+    flex-basis: calc(50% - 20px);
+    margin-right: 20px;
   }
-  
-  .home-header {
-    font-weight: bold;
-    color: #ff69b4;
+}
+
+@media (min-width: 1200px) {
+  .article-card {
+    flex-basis: calc(33.33% - 20px);
   }
-  
-  .article {
-    margin-bottom: 20px;
-  }
-  
-  .article-title {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .article-description {
-    font-size: 14px;
-    color: #666;
-  }
-  
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.article-title {
+  font-family: 'Leckerli One';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.article-description {
+  font-family: 'Leckerli One';
+  font-size: 14px;
+  color: #666;
+}
