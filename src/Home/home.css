@@ -3,7 +3,7 @@
 
 .home-container {
   background-color: #efb1cb;
-  padding: 20px;
+  padding: 2vw;
 }
 
 .home-header {
@@ -21,39 +21,39 @@
 
 .article-card {
   border: 1px solid #ccc;
-  padding: 20px;
+  padding: 2vw;
   background-color: #fff;
   flex: 1 0 100%;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
 }
 
 @media (min-width: 768px) {
   .article-card {
-    flex-basis: calc(50% - 20px);
-    margin-right: 20px;
+    flex-basis: calc(25% - 2vw);
+    margin-right: 2vw;
   }
 }
 
 @media (min-width: 1200px) {
   .article-card {
-    flex-basis: calc(33.33% - 20px);
+    flex-basis: calc(18% - 2vw);
   }
 }
 
 .article-image {
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 2vh;
 }
 
 .article-title {
   font-family: 'Leckerli One';
-  font-size: 18px;
+  font-size: 2vw;
   font-weight: bold;
 }
 
 .article-description {
   font-family: 'Leckerli One';
-  font-size: 14px;
+  font-size: 1.6vw;
   color: #666;
 }
