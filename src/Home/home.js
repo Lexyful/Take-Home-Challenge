@@ -1,36 +1,56 @@
-// Home.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './home.css';
 import SearchBar from '../SearchBar/SearchBar';
+import './home.css';
 
-function Home({ news }) {
-  const [filteredNews, setFilteredNews] = useState(news);
+const Home = ({ news }) => {
+  const [showDescription] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
 
-  const handleSearch = (query) => {
-    const filteredArticles = news.filter((article) =>
-      article.title.toLowerCase().includes(query.toLowerCase())
-    );
-    setFilteredNews(filteredArticles);
+  const handleSearchChange = (value) => {
+    setSearchQuery(value);
   };
+
+  const filteredNews = news.filter((article) =>
+    article.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  const handleArticleClick = (index) => {
+    const filteredIndex = news.findIndex(
+      (article) => article.title === filteredNews[index].title
+    );
+    return filteredIndex !== -1 ? filteredIndex : index;
+  };
+
+  const articleCards = filteredNews.map((article, index) => (
+    <div className="article-card" key={index}>
+      <Link to={`/article/${handleArticleClick(index)}`}>
+        <h2 className="article-title">{article.title}</h2>
+        {article.urlToImage && (
+          <img
+            className="article-image"
+            id="article-pic"
+            src={article.urlToImage}
+            alt={article.title}
+          />
+        )}
+        <p className="article-description">
+          {showDescription && article.description
+            ? article.description
+            : article.description
+            ? `${article.description.slice(0, 70)}...`
+            : 'No description available'}
+        </p>
+      </Link>
+    </div>
+  ));
 
   return (
     <div className="home-container">
-      <h1 className="home-header">Latest News</h1>
-      <SearchBar news={news} onSearch={handleSearch} />
-      <div className="articles-grid">
-        {filteredNews.map((article, index) => (
-          <Link to={`/article/${index}`} key={index} className="article-card">
-            {article.urlToImage && (
-              <img className="article-image" src={article.urlToImage} alt={article.title} />
-            )}
-            <h3 className="article-title">{article.title}</h3>
-            <p className="article-description">{article.description}</p>
-          </Link>
-        ))}
-      </div>
+      <SearchBar news={news} onSearch={handleSearchChange} />
+      <div className="articles-grid">{articleCards}</div>
     </div>
   );
-}
+};
 
 export default Home;

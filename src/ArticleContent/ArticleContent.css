@@ -1,0 +1,14 @@
+#show-button{
+    font-family: 'Leckerli One', sans-serif;
+    font-size: .7vw;
+    background-color: #219ebc;
+    transition-duration: 0.4s;
+    height: 4vh;
+    width: 8vh;
+    margin-left: 1vh;
+}
+
+#show-button:hover{
+    background-color: #023047;
+    color: white;
+  }
