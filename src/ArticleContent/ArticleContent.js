@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import './ArticleContent.css'
 
-const MAX_CHARACTERS = 200; // Maximum number of characters to display initially
+const MAX_CHARACTERS = 200;
 
 const ArticleContent = ({ content }) => {
   const [showMore, setShowMore] = useState(false);
@@ -9,6 +10,10 @@ const ArticleContent = ({ content }) => {
     setShowMore(!showMore);
   };
 
+  if (content === null) {
+    return <p>No content available</p>;
+  }
+
   const truncatedContent = showMore ? content : content.slice(0, MAX_CHARACTERS);
   const showToggle = content.length > MAX_CHARACTERS;
 
@@ -16,7 +21,7 @@ const ArticleContent = ({ content }) => {
     <div>
       <p>{truncatedContent}</p>
       {showToggle && (
-        <button onClick={toggleShowMore}>
+        <button id="show-button" onClick={toggleShowMore}>
           {showMore ? 'Show Less' : 'Show More'}
         </button>
       )}
