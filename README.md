@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# 📰 Latest News App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+  - [Introduction](#Introduction)
+  - [Features](#Features)
+  - [Technologies](#Technologies)
+  - [Contributors](#Contributors)
+  - [Illustrations](#Illustrations)
+  - [Set Up](#Set-Up)
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+This project demonstrates my ability to complete a take-home tech challenge in approximately 8 hours. The objective of the challenge was to create an application that displays news articles from an API and allows users to view previews of the articles on a home page. Additionally, users can access a more detailed view of an article by selecting it. The application also provides functionality for searching through the articles.
 
-### `npm start`
+## Features
+📝 Displaying the latest business news articles
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🏠 Home page with previews of articles
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📄 Detailed view of individual articles
 
-### `npm test`
+🔍 Search functionality to filter articles
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+⚙️ Sorting and filtering options
 
-### `npm run build`
+## Technologies
+[![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
+[![React Router](https://img.shields.io/badge/React%20Router-5.3.0-green.svg)](https://reactrouter.com/)
+![CSS](https://img.shields.io/badge/CSS-3-blueviolet.svg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributors
+- Lexye Jordan [GitHub](https://github.com/Lexyful) | [LinkedIn](https://www.linkedin.com/in/lexye-jordan-175879260/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Illustrations
+<details>
+<summary> <h3>Planning and Inspo</h3> </summary>
+<br>
 
-### `npm run eject`
+<br>![Screenshot 2023-06-08 at 3 29 13 PM](https://github.com/Lexyful/take-home-challenge/assets/117550598/8c520b88-9be6-4f91-bb8d-40f35dd58116)
+<br>![Screenshot 2023-06-08 at 3 24 08 PM](https://github.com/Lexyful/take-home-challenge/assets/117550598/c76889c4-6be9-436c-a196-0d9116c61d45)
+<br>![Screenshot 2023-06-08 at 3 24 30 PM](https://github.com/Lexyful/take-home-challenge/assets/117550598/2b1f025b-4591-4e7c-b5a7-2d7c150906f7)
+<br>![Screenshot 2023-06-08 at 3 25 19 PM](https://github.com/Lexyful/take-home-challenge/assets/117550598/64cfc7a2-5c9b-42db-9897-6b2d94b84365)
+  
+</details>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<details>
+<summary> <h3>Preview</h3> </summary>
+<br>
+![Screenshot 2023-06-08 at 3 34 14 PM](https://github.com/Lexyful/take-home-challenge/assets/117550598/338a81cd-ade8-430f-ad04-8bde6bd92171)
+![Screenshot 2023-06-08 at 3 35 00 PM](https://github.com/Lexyful/take-home-challenge/assets/117550598/8031f73b-a38f-4a9c-a081-6217d9bce3d8)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+</details>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Set Up
+1. Fork this repo
+2. Clone the repo to your local machine
+3. Run `npm i`, then ` npm run build`, then `npm start`
+4. View the project in the browser by opening localhost:3000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Sources
+  - [MDN](http://developer.mozilla.org/en-US/)
+  - [W3Schools](https://www.w3schools.com/)
+  - [React Docs](https://reactjs.org/docs/getting-started.html)
+  - [React Router Docs](https://v5.reactrouter.com/)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
