@@ -33,24 +33,19 @@ This project demonstrates my ability to complete a take-home tech challenge in a
 - Lexye Jordan [GitHub](https://github.com/Lexyful) | [LinkedIn](https://www.linkedin.com/in/lexye-jordan-175879260/)
 
 ## Illustrations
-<details>
-<summary> <h3>Planning and Inspo</h3> </summary>
-<br>
+
+<summary> <h3>Planning | Inspo | Preview</h3> </summary>
 
 <br>![Screenshot 2023-06-08 at 3 29 13 PM](https://github.com/Lexyful/take-home-challenge/assets/117550598/8c520b88-9be6-4f91-bb8d-40f35dd58116)
 <br>![Screenshot 2023-06-08 at 3 24 08 PM](https://github.com/Lexyful/take-home-challenge/assets/117550598/c76889c4-6be9-436c-a196-0d9116c61d45)
-<br>![Screenshot 2023-06-08 at 3 24 30 PM](https://github.com/Lexyful/take-home-challenge/assets/117550598/2b1f025b-4591-4e7c-b5a7-2d7c150906f7)
-<br>![Screenshot 2023-06-08 at 3 25 19 PM](https://github.com/Lexyful/take-home-challenge/assets/117550598/64cfc7a2-5c9b-42db-9897-6b2d94b84365)
-  
-</details>
-
-<details>
-<summary> <h3>Preview</h3> </summary>
 <br>
-![Screenshot 2023-06-08 at 3 34 14 PM](https://github.com/Lexyful/take-home-challenge/assets/117550598/338a81cd-ade8-430f-ad04-8bde6bd92171)
-![Screenshot 2023-06-08 at 3 35 00 PM](https://github.com/Lexyful/take-home-challenge/assets/117550598/8031f73b-a38f-4a9c-a081-6217d9bce3d8)
+<br>![Screenshot 2023-06-08 at 3 24 30 PM](https://github.com/Lexyful/take-home-challenge/assets/117550598/2b1f025b-4591-4e7c-b5a7-2d7c150906f7)
+![Screenshot 2023-06-08 at 3 25 19 PM](https://github.com/Lexyful/take-home-challenge/assets/117550598/64cfc7a2-5c9b-42db-9897-6b2d94b84365)
+<br>
+<br> ![Screenshot 2023-06-08 at 3 51 18 PM](https://github.com/Lexyful/take-home-challenge/assets/117550598/08b07715-bb5c-443f-ab9a-f284d08e2049)
+![Screenshot 2023-06-08 at 3 52 39 PM](https://github.com/Lexyful/take-home-challenge/assets/117550598/200e2842-48f3-44cd-a8fa-d77162b4cc5f)
 
-</details>
+
 
 ## Set Up
 1. Fork this repo
